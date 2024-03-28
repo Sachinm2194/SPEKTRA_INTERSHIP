@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.container {
+  /* display: flex;
+  justify-content: center; */
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 30px;
+  /* text-align: center; */
+  background-color: #050000e6;
+}
+.AboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background-color: #f9c3f8;
+  margin: 5px;
+}
+img {
+  display: flex;
+  justify-content: end;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px 100px 10px 0px;
+}
+.intro {
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.objective {
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(255, 234, 195);
+  margin: 5px;
+}
+.details {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+.card h2 {
+  margin-top: 0;
+  color: #333;
+}
+.card p {
+  color: #666;
+}
+
+.projects{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid rgb(241, 184, 79);
+  margin: 20px;
+  border-radius: 30px;
+}

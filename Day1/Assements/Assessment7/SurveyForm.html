@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./Survey.css">
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm">
+        
+        <label class="labels"> Name:</label>
+        <input type="text" class="inputs" />
+
+        <label class="labels"> Email:</label>
+        <input type="email" class="inputs" required />
+
+        <label class="labels"> Phone:</label>
+        <input type="tel" class="inputs" required  />
+
+        <label class="labels"> Date:</label>
+        <input type="date" class="inputs" />
+
+        <label class="labels"> Select Your field</label>
+        <select>
+          <option value="dev">Development Engineering Trainee</option>
+          <option value="cloud">Cloud Engineering Trainee</option>
+        </select>
+        <h2>Select Your Gender:</h2>
+
+        <label class="labels">
+          <input type="radio" name="gender" value="male"  /> Male
+        </label>
+
+        <label class="labels">
+          <input type="radio" name="gender" value="female"  />
+          Female
+        </label>
+
+        <label class="labels">
+          <input type="radio" name="gender" value="other"  />
+          Other
+        </label>
+
+        <h2>Skills you know:</h2>
+
+        <label class="labels">
+          <input type="checkbox" name="skills" value="c"  />
+          C</label
+        >
+
+        <label class="labels">
+          <input type="checkbox" name="skills" value="c++"  />
+          C++
+        </label>
+
+        <label class="labels">
+          <input type="checkbox" name="skills" value="java"  />
+          Java
+        </label>
+
+        <label class="labels">
+          <input type="checkbox" name="skills" value="js"  />
+          JavaScript
+        </label>
+
+        <label class="labels">
+          <input type="checkbox" name="skills" value="ts" />
+          TypeScript
+        </label>
+
+        <label class="labels">
+          <input type="checkbox" name="skills" value="reactjs"  />
+          ReactJs
+        </label>
+
+        <label class="labels">
+          <input type="checkbox" name="hobby" value="angulajs"  />
+          AngularJs
+        </label>
+
+        <h2>Enter Your Feedback:</h2>
+
+        <textarea name="feedback" rows="4" cols="50"></textarea>
+
+        <input type="submit" id="button"/>
+      </form>
+    </div>
+  </body>
+</html>

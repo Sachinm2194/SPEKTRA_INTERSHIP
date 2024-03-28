@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+#myForm {
+  border: 1px solid black;
+  width: 600px;
+}
+.labels {
+  display: block;
+  margin: 0 1rem 0 1rem;
+  margin-top: 1rem;
+}
+.inputs {
+  display: block;
+  margin: 0 1rem 0 1rem;
+  margin-top: 0.3rem;
+  width: 90%;
+  height: 30px;
+}
+#button{
+  margin: 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}

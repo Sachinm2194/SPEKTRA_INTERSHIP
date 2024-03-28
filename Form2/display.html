@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form1.css" />
+  </head>
+  <body>
+    <div class="container2">
+      <h1>Welcome</h1>
+      <h3>Name:<span id="name"></span></h3>
+       <h3>Email:<span id="email"></span></h3>
+      <h3>Phone:<span id="phone"></span></h3>
+      <h3>Age:<span id="age"></span></h3>
+    </div>
+    <script>
+      const name = localStorage.getItem("name");
+      const email = localStorage.getItem("email");
+      const phone = localStorage.getItem("phone");
+      const age = localStorage.getItem("age");
+
+      document.getElementById("name").textContent = name;
+      document.getElementById("email").textContent = email;
+      document.getElementById("phone").textContent = phone;
+      document.getElementById("age").textContent = age;
+    </script>
+  </body>
+</html>

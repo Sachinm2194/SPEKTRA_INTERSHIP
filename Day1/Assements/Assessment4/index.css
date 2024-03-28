@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 400px;
+  border: 1px solid black;
+}
+video {
+  width: 400px;
+  border: 1px solid black;
+}

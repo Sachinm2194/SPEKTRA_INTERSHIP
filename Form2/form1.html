@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./form1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="my_form">
+        <p style="font-weight: bold; text-align: center; font-size: large">
+          Enter your credentials
+        </p>
+        <hr />
+        <label for="name" class="labels"> Name:</label>
+        <input type="name" id="name" class="input" />
+
+        <label for="email" class="labels"> Email:</label>
+        <input type="email" id="email" class="input" />
+
+        <label for="phone" class="labels">Phone:</label>
+        <input type="tel" id="phone" class="input" />
+
+        <label for="password" class="labels">Password:</label>
+        <input type="password" id="password" class="input" required />
+
+        <label for="age" class="labels">Age</label>
+        <input type="number" id="age" class="input" />
+
+        <div class="box-container">
+          <div class="radio-box">
+            <p style="font-size: large; font-family: bold">Select Gender</p>
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              class="radio"
+              id="male"
+            />
+            Male <br />
+
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              class="radio"
+              id="female"
+            />
+            Female <br />
+
+            <input type="radio" name="gender" value="other" id="other" />
+            Other
+          </div>
+          <div class="check-box">
+            <p style="font-size: large; font-family: bold">Select course</p>
+
+            <input type="checkbox" class="checkbox" /> Front-End <br /><input
+              type="checkbox"
+              class="checkbox"
+            />Back-End <br /><input type="checkbox" class="checkbox" />FullStack
+          </div>
+        </div>
+        <br />
+        <div class="time-date">
+          <p style="font-size: large; font-family: bold">Date:</p>
+          <div>
+            <input type="date" class="input" />
+          </div>
+          <p style="font-size: large; font-family: bold">Time:</p>
+          <div>
+            <div>
+              <input type="time" class="input" />
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <input
+          type="button"
+          value=" submit"
+          id="button"
+          onclick="handleSubmit()"
+        />
+        <input type="reset" id="reset" />
+      </form>
+    </div>
+    <script>
+        const handleSubmit = () => {
+        const name = document.querySelector("#name").value;
+        const email = document.querySelector("#email").value;
+        const phone = document.querySelector("#phone").value;
+        const age = document.querySelector("#age").value;
+        const radio = document.querySelector(".radio").value;
+
+        console.log(name, email, phone, age);
+        localStorage.setItem("name", name);
+        localStorage.setItem("email",email);
+        localStorage.setItem("phone",phone);
+        localStorage.setItem("age",age);
+        location.href="./display.html"
+
+      };
+    </script>
+  </body>
+</html>
