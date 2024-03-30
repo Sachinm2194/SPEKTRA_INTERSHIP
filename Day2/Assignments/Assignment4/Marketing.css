@@ -1,0 +1,16 @@
+.collapse ul li a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+nav {
+  border: 1px solid black;
+}
+.sidebar {
+  background-color: #949494;
+  border: 1px solid black;
+}
+.container-fluid {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}

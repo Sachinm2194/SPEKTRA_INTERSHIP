@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: rgb(229, 225, 225); */
+}
+header {
+  text-align: center;
+  font-weight: 500;
+  font-size: xx-large;
+  margin-top: 50px;
+}
+.cards {
+  margin: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+img {
+  text-align: center;
+  width: 80px;
+}
+.amt{
+  font: 2em sans-serif;
+}

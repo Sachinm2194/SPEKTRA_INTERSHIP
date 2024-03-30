@@ -1,0 +1,16 @@
+.nav-text ul li a{
+  color: rgb(255, 255, 255);
+}
+.row .col-sm-2 li{
+  list-style: none;
+  padding: 20px;
+}
+.navColor{
+  background-color: #bbbaba;
+}
+
+ button a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  /* background-color: red; */
+}
