@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Array</title>
+</head>
+
+<body>
+  <form>
+    <label for="numbers">Enter Numbers separated by commas (,):</label>
+    <input type="text" id="numbers" />
+    <input type="submit" value="Calculate" onclick="return handleCalculate()" />
+  </form>
+
+  <p>Sum :</p>
+  <span id="sumCal"></span>
+  <p>Average :</p>
+  <span id="avgCal"></span>
+  <p>Grade :</p>
+  <span id="gradeCal"></span>
+
+  <script>
+    function handleCalculate() {
+      const numbers = document.getElementById("numbers").value;
+      const array = numbers.split(",").map((n) => parseFloat(n.trim()));
+      const { sum, avg, grade } = calculate(array);
+      const sumCal = document.getElementById("sumCal");
+      sumCal.textContent = sum;
+      const avgCal = document.getElementById("avgCal");
+      avgCal.textContent = avg.toFixed(2);
+      const gradeCal = document.getElementById("gradeCal");
+      gradeCal.textContent = grade;
+      return false;
+    }
+
+    function calculate(array) {
+      let sum = 0,
+        grade,
+        avg;
+      let len = array.length;
+      for (let i = 0; i < len; i++) {
+        sum += array[i];
+      }
+      avg = sum / len;
+      if (avg >= 91) {
+        grade = 'A'
+      } else if (avg >= 81) {
+        grade = 'B'
+      } else if (avg >= 71) {
+        grade = 'C'
+      } else {
+        grade = 'D'
+      }
+      return { sum, avg, grade };
+    }
+  </script>
+</body>
+
+</html>

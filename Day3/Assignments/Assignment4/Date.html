@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date</title>
+</head>
+
+<body>
+  <h3>1st january being sunday between 2015 to 2050</h3>
+  <script>
+    let array = [];
+    for (year = 2015; year <= 2050; year++) {
+      let h4 = document.createElement('h4');
+      let date = new Date(year, 0, 1);
+      // console.log(date);
+      if (date.getDay() === 0) {
+        h4.innerHTML = "1st january being sunday " + year;
+        document.body.appendChild(h4)
+      }
+    }
+
+  </script>
+</body>
+
+</html>

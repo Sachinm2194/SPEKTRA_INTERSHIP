@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculater</title>
+</head>
+
+<body>
+  <script>
+    let num1 = prompt("Enter Number 1");
+    let operator = prompt("Emter operator");
+    let num2 = prompt("Enter Number 2");
+    let n1 = parseFloat(num1)
+    let n2 = parseFloat(num2)
+    let result = 0;
+    // console.log(n1+2)
+    switch (operator) {
+      case '+': result = n1 + n2;
+        break;
+      case '-': result = n1 - n2;
+        break;
+      case '*': result = n1 * n2;
+        break;
+      case '/': result = n1 / n2;
+        break;
+      case '**': result = n1 ** n2;
+        break;
+    }
+    alert(result)
+  </script>
+</body>
+
+</html>

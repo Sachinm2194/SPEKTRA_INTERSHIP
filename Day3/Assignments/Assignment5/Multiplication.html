@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    Enter number 1: <input type="text" id="n1"> <br><br>
+    Enter number 2: <input type="text" id="n2"> <br> <br>
+    <input type="submit" value='Multiply' onclick="handleMultiplication()" id="multiply">
+    <input type="submit" value='Divide' onclick="handleDivision()" id="divide">
+  </form>
+  <h3>The Result is :</h3>
+  <span id="result"></span>
+
+  <script>
+    function handleMultiplication() {
+      event.preventDefault(); 
+      let num1 = document.getElementById("n1").value;
+      let num2 = document.getElementById("n2").value;
+      let resultElement = document.getElementById("result");
+
+      let n1 = parseFloat(num1);
+      let n2 = parseFloat(num2);
+      let result = n1 * n2;
+      resultElement.textContent = result;
+    }
+
+    function handleDivision() {
+      event.preventDefault(); 
+      let num1 = document.getElementById("n1").value;
+      let num2 = document.getElementById("n2").value;
+      let resultElement = document.getElementById("result");
+
+      let n1 = parseFloat(num1);
+      let n2 = parseFloat(num2);
+
+      if (n2 === 0) {
+        resultElement.textContent = "Cannot divide by zero";
+      } else {
+        let result = n1 / n2;
+        resultElement.textContent = result;
+      }
+    }
+  </script>
+</body>
+
+</html>
